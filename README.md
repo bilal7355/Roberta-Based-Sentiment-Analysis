@@ -23,20 +23,20 @@ pip install -r requirements.txt
 ## NOTE: Use Virtual Environment to not face dependency issues
 
 1. **Create a Virtual Enviornment**:
-   # Windows:
+   ### Windows:
    ```bash
    python -m venv myenv
    ```
-   # Mac:
+   ### Mac:
    ```bash
    python3 -m venv myenv
    ```
 2. **Activate the Virtual Enviornment**(In cmd or VS Code):
-   # Windows:
+   ### Windows:
    ```bash
    myenv\Scripts\activate
    ```
-   # Mac:
+   ### Mac:
    ```bash
    source myenv\bin\activate
    ```
@@ -46,11 +46,11 @@ pip install -r requirements.txt
 To deploy the trained model as a web service:
 
 1. **Run the Flask Application**: Start the Flask web server:
-   # Windows:
+   ### Windows:
    ```bash
    python app.py
    ```
-   # Mac:
+   ### Mac:
    ```bash
    python3 app.py
    ```
