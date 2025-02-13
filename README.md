@@ -35,24 +35,7 @@ Ensure you have the appropriate dataset and adjust the notebook as needed to sui
 
 To deploy the trained model as a web service:
 
-1. **Save the Model**: After training, save the model in a format compatible with your deployment framework. For example, using the `save_pretrained` method from the Hugging Face Transformers library:
-
-   ```python
-   model.save_pretrained('path_to_save_model')
-   tokenizer.save_pretrained('path_to_save_tokenizer')
-   ```
-
-2. **Update `app.py`**: Modify the `app.py` script to load the saved model and tokenizer:
-
-   ```python
-   from transformers import RobertaTokenizer, RobertaForSequenceClassification
-
-   model_path = 'path_to_saved_model'
-   tokenizer = RobertaTokenizer.from_pretrained(model_path)
-   model = RobertaForSequenceClassification.from_pretrained(model_path)
-   ```
-
-3. **Run the Flask Application**: Start the Flask web server:
+1. **Run the Flask Application**: Start the Flask web server:
 
    ```bash
    python app.py
