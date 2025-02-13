@@ -1,0 +1,7 @@
+flask
+numpy
+transformers
+scipy
+render_template
+request
+jsonify
