@@ -20,25 +20,39 @@ Install the necessary packages using:
 ```bash
 pip install -r requirements.txt
 ```
+## NOTE: Use Virtual Environment to not face dependency issues
 
-## Training the Model
-
-The `roberta_based_sentiment_analysis.ipynb` notebook guides you through the process of:
-
-1. Loading and preprocessing the dataset.
-2. Fine-tuning the RoBERTa model for sentiment classification.
-3. Evaluating the model's performance on test data.
-
-Ensure you have the appropriate dataset and adjust the notebook as needed to suit your specific requirements.
-
+1. **Create a Virtual Enviornment**:
+   # Windows:
+   ```bash
+   python -m venv myenv
+   ```
+   # Mac:
+   ```bash
+   python3 -m venv myenv
+   ```
+2. **Activate the Virtual Enviornment**(In cmd or VS Code):
+   # Windows:
+   ```bash
+   myenv\Scripts\activate
+   ```
+   # Mac:
+   ```bash
+   source myenv\bin\activate
+   ```
+   
 ## Deploying the Model
 
 To deploy the trained model as a web service:
 
 1. **Run the Flask Application**: Start the Flask web server:
-
+   # Windows:
    ```bash
    python app.py
+   ```
+   # Mac:
+   ```bash
+   python3 app.py
    ```
 
    The application will be accessible at `http://127.0.0.1:5000/`. You can input text through the web interface to receive sentiment predictions from the model.
