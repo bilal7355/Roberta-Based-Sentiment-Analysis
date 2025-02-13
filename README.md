@@ -8,18 +8,6 @@ This repository provides a framework for performing sentiment analysis using a f
 - `app.py`: Flask application script for serving the trained model as a web service.
 - `templates/`: Directory containing HTML templates for the web application's user interface.
 
-## Prerequisites
-
-Before running the code, ensure you have the following installed:
-
-- Python 3.6 or higher
-- Required Python packages listed in `requirements.txt`
-
-Install the necessary packages using:
-
-```bash
-pip install -r requirements.txt
-```
 ## NOTE: Use Virtual Environment to not face dependency issues
 
 1. **Create a Virtual Enviornment**:
@@ -40,6 +28,19 @@ pip install -r requirements.txt
    ```bash
    source myenv\bin\activate
    ```
+   
+## Prerequisites
+
+Before running the code, ensure you have the following installed:
+
+- Python 3.6 or higher
+- Required Python packages listed in `requirements.txt`
+
+Install the necessary packages using:
+
+```bash
+pip install -r requirements.txt
+```
    
 ## Deploying the Model
 
